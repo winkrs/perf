@@ -65,7 +65,7 @@ function getUserDataSettings() {
       UsersCount: 10,
       ProjectMembersCountPerProject: 5,
       AuditLogsCount: 5000,
-      BlobSize: '1 KiB',
+      BlobSize: getEnv('BLOB_SIZE', '1 KiB'),
       BlobsCountPerArtifact: 1
     },
     small: {
